@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script type="text/javascript" src="js/framework.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="middle">
+        <div id="innerContainer">
+          <div id="content">
+            <div class="header">
+              <div class="header_row">
+                <div id="title"></div>
+                <div id="elapsedTime"></div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="headerRow">
+                <div class="headerLeft">
+                  <div id="score"></div>
+                  <!-- <button id="undo">Undo</button> -->
+                </div>
+                <div class="headerRight">
+                  <button
+                    id="controlButton"
+                    state="play"
+                    onclick="startTimer()"
+                  >
+                    Play
+                  </button>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="gameArea">
+              <div id="termsContainer">
+                <div
+                  class="termWidget"
+                  id="termWidget1"
+                  linkid="1"
+                  draggable="true"
+                  ondrag="drag(event)"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                  ondragstart="drag(event)"
+                >
+                  Term 1
+                </div>
+                <div
+                  class="termWidget"
+                  id="termWidget2"
+                  linkid="2"
+                  draggable="true"
+                  ondragstart="drag(event)"
+                  draggable="true"
+                  ondragstart="drag(event)"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                >
+                  Term 2
+                </div>
+                <div
+                  class="termWidget"
+                  unselectable="on"
+                  id="termWidget3"
+                  linkid="3"
+                  draggable="true"
+                  ondragstart="drag(event)"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                >
+                  Term 3
+                </div>
+                <div
+                  class="termWidget"
+                  unselectable="on"
+                  id="termWidget4"
+                  linkid="4"
+                  draggable="true"
+                  ondragstart="drag(event)"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                >
+                  Term 4
+                </div>
+                <div
+                  class="termWidget"
+                  unselectable="on"
+                  id="termWidget5"
+                  linkid="5"
+                  draggable="true"
+                  ondragstart="drag(event)"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                >
+                  Term 5
+                </div>
+              </div>
+              <div id="definitionsContainer">
+                <div
+                  class="definitionWidget"
+                  id="definitionWidget1"
+                  expectedLinkId="1"
+                  droppedLinkId="0"
+                  draggable="true"
+                >
+                  <div
+                    class="droppedTerm"
+                    draggable="true"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)"
+                  >
+                    Term 1
+                  </div>
+                  <div class="definitionText" unselectable="on">
+                    Term 1 - Definition which can be long and needs to word
+                    wrap.
+                  </div>
+                  <div class="clearfix_no_margin"></div>
+                </div>
+                <div
+                  class="definitionWidget"
+                  unselectable="on"
+                  id="definitionWidget2"
+                  expectedLinkId="2"
+                  droppedLinkId="0"
+                >
+                  <div
+                    class="droppedTerm"
+                    unselectable="on"
+                    draggable="false"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)"
+                  >
+                    Term 2
+                  </div>
+                  <div class="definitionText" unselectable="on">
+                    Term 2 - Definition which can be long and needs to word
+                    wrap.
+                  </div>
+                  <div class="clearfix_no_margin"></div>
+                </div>
+                <div
+                  class="definitionWidget"
+                  unselectable="on"
+                  id="definitionWidget3"
+                  expectedLinkId="3"
+                  droppedLinkId="0"
+                >
+                  <div
+                    class="droppedTerm"
+                    unselectable="on"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)"
+                  >
+                    Term 3
+                  </div>
+                  <div class="definitionText" unselectable="on">
+                    Term 3 - Definition which can be long and needs to word
+                    wrap.
+                  </div>
+                  <div class="clearfix_no_margin"></div>
+                </div>
+                <div
+                  class="definitionWidget"
+                  unselectable="on"
+                  id="definitionWidget4"
+                  expectedLinkId="4"
+                  droppedLinkId="0"
+                >
+                  <div
+                    class="droppedTerm"
+                    unselectable="on"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)"
+                  >
+                    Term 4
+                  </div>
+                  <div class="definitionText">
+                    Term 4 - Definition which can be long and needs to word
+                    wrap.
+                  </div>
+                  <div class="clearfix_no_margin"></div>
+                </div>
+                <div
+                  class="definitionWidget"
+                  unselectable="on"
+                  id="definitionWidget5"
+                  expectedLinkId="5"
+                  droppedLinkId="0"
+                >
+                  <div
+                    class="droppedTerm"
+                    unselectable="on"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)"
+                  >
+                    Term 5
+                  </div>
+                  <div class="definitionText" unselectable="on">
+                    Term 5 - Definition which can be long and needs to word
+                    wrap.
+                  </div>
+                  <div class="clearfix_no_margin"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
