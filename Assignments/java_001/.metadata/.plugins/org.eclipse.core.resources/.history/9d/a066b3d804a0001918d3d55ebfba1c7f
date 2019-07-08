@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+
+public class simpleDie {
+	
+	public static void main(String[] args) {
+
+		Scanner keyIn = new Scanner(System.in);
+		
+		System.out.print("Press enter to roll die");
+		keyIn.nextLine();
+		System.out.print("Enter key pressed");
+		keyIn.nextLine();
+		
+		
+	}
+
+}

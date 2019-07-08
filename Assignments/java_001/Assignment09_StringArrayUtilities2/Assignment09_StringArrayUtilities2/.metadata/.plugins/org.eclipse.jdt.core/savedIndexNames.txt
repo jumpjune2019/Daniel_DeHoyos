@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\java_training\Assignments\java_001\Assignment09_StringArrayUtilities2\Assignment09_StringArrayUtilities2\.metadata\.plugins\org.eclipse.jdt.core
+1645852497.index
+4274942457.index
+1002353195.index
+1067094681.index

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\java_training\Assignments\java_001\Assignment01_HeadOrTail\.metadata\.plugins\org.eclipse.jdt.core
+2345932079.index
+1067094681.index
+3618001174.index

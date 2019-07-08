@@ -1,0 +1,26 @@
+import java.util.Random;
+
+public class HeadOrTailTally {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//initialize random object and assign it to the r variable
+		   Random r = new Random(); 
+		   // initialize 0 for the count of heads
+		    int heads = 0;
+		    //initialize 0 for the count of tails 
+		    int tails = 0;
+		    for (int i = 0; i <= 1000; i++) { 
+		        int side = r.nextInt(2);
+		        if (side == 1) {
+		            heads++;
+		        } else if(side == 0) {
+		        	tails++;
+		        }
+		    } 
+		    System.out.println("1000 coin flips");
+		    System.out.println("Count of heads:" + heads); 
+		    System.out.println("Count of tails:" + tails); 
+	}
+
+}

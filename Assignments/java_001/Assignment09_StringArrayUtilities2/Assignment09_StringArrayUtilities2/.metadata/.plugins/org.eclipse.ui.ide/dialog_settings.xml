@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\java_training\Assignments\java_001\Assignment05_DicePairOfStats\src"/>
+		<item value="C:\java_training\Assignments\java_001\Assignment05_DicePairOfStats\bin"/>
+		<item value="C:\java_training\Assignments\java_001\Assignment05_DicePairOfStats\Assignment05_DicePairStats"/>
+		<item value="C:\java_training\Assignments\java_001\Assignment08_StringArrayUtilities\Assignment08_StringArrayUtilities"/>
+		<item value="C:\java_training\Assignments\java_001\Assignment09_StringArrayUtilities2\Assignment09_StringArrayUtilities2"/>
+	</list>
+</section>

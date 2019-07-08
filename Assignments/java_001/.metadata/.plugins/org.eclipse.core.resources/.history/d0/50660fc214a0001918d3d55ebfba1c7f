@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+
+public class simpleDie {
+	
+	public static void main(String[] args) {
+
+		Scanner keyIn = new Scanner(System.in);
+		
+		System.out.print("Press enter to roll die");
+		keyIn.nextLine();
+		
+		int rolled = dieRoll();
+		
+		String playAgain = "Y";
+		while(playAgain.equalsIgnoreCase("Y")) {
+			
+		System.out.println("You rolled a " + rolled);
+			//insert break out statement
+			//scanner statement to get input
+			//variable = scanner result
+			Scanner exit = new Scanner(System.in);
+			
+			System.out.println("Play again?");
+			
+			String result = exit.nextLine();
+			
+			if(result == playAgain) {
+				int newRoll = dieRoll();
+				System.out.println("You Rolled a " + newRoll);
+			}
+			
+			
+			
+			
+			
+		
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	public static  int dieRoll() {
+			int roll = (int) Math.ceil( (int) (Math.random()*6)+ 1);
+			return roll;
+		}
+	
+	
+	
+	
+
+}

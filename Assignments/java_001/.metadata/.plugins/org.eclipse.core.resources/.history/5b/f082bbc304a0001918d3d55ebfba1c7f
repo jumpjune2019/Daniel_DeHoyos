@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class simpleDie {
+	
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		String readString = scanner.nextLine();
+		System.out.println(readString);
+		if(readString.equals("")) {
+			System.out.println("Enter Key pressed.");
+		}else if (scanner.hasNextLine()) {
+			readString = scanner.nextLine();
+		}else {
+			readString = null;
+		}
+		
+		
+	}
+
+}
