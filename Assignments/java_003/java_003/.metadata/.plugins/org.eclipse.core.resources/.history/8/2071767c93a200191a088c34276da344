@@ -1,0 +1,48 @@
+package compare;
+import java.io.*;
+public class Compare {
+	public static void main(String[] args) throws IOException {
+		if(args.length == 2) {
+			FileInputStream file1 = new FileInputStream(args[0]);
+			FileInputStream file2 = new FileInputStream(args[1]);
+
+			
+			int i = 0;
+			int j = 0;
+			int fileSize1 = 0; 
+			int fileSize2 = 0; 
+			
+			
+			
+			
+	        
+
+	        
+	        try {
+	        	//this while loop reads the first txt file
+	        	while((i = file1.read()) != -1) {
+	        		fileSize1 += i;
+	        	}//this next while loop reads the second txt file
+	        	while((j = file2.read()) != -1) {
+	        		fileSize2 += j; 
+	        	}
+	        	//this prints 
+	        	System.out.println("Output: " +args[0]+ " " +args[1] + ":");
+	        	if(fileSize1 == fileSize2) {
+	        		System.out.println("Identical content" +fileSize1);
+	        	}else {
+	        		System.out.println("Result:");
+	        		//format string 
+	        		System.out.println("\tDifferent Content: " + "this is file1 "+ fileSize1+ " This is file2" + fileSize2);
+	        	}
+	        	
+	        }catch(IOException e) {
+	        	e.printStackTrace();
+	        }
+	        
+		}else {
+			System.out.println("Incorrect number of files ");
+		}
+	       
+	}
+}

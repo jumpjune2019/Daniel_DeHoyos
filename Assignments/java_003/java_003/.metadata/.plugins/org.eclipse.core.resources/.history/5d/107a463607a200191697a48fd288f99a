@@ -1,0 +1,10 @@
+package customexceptionhandlers;
+
+public class CustomExceptionHandlers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

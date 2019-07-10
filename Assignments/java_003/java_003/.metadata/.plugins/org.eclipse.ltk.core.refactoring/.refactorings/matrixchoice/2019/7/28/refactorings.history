@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ImproperInputException.java&apos; to &apos;customexceptionhandlers/src/customexceptionhandlers&apos;&#x0D;&#x0A;- Original project: &apos;matrixchoice&apos;&#x0D;&#x0A;- Destination element: &apos;customexceptionhandlers/src/customexceptionhandlers&apos;&#x0D;&#x0A;- Original element: &apos;matrixchoice.ImproperInputException.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=customexceptionhandlers/src&lt;customexceptionhandlers" element1="/src&lt;matrixchoice{ImproperInputException.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1562682753862" units="1" version="1.0"/>
+</session>

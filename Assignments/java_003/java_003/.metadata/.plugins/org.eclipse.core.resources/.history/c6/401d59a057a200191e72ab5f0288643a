@@ -1,0 +1,109 @@
+package customexceptionhandlers.ImproperException.*;
+import 
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+import static customexceptionhandlers.ImproperInputException.*;
+public class CustomExceptionHandlers {
+
+	public static void main(String[] args) throws IOException {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String [][] matrix = {{"", "Die 1", "Die 2", "Die 3", "Die 4", "Die 5", "Die 6"},
+				{"Die 1", "Snake Eyes", "Australian yo", "Little Joe From Kokomo", "No field five", "Easy six", "Six one you're done"},
+				{"Die 2", "Ace caught a deuce", "Ballerina", "the fever", "Jimmie Hicks"," Benny Blue"," Easy Eight"},
+				{"Die 3", "Easy four", "OJ", "Brooklyn Forest", "Big Red", "Eighter from Decatur", "Nina from Pasadena"},
+				{"Die 4", "Little Phoebe", "easy six", "Skinny McKinney", "Square pair", "Railroad nine", "Big one on the end"},
+				{"Die 5", "Sixie from Dixie", "Skinny Dugan", "Easy eight", "Jesse James", "Puppy paws", "yo"},
+				{"Die 6", "The Devil", "Easy eight", "Lou Brown", "Tennessee", "Six five no jive", "Midnight"}};
+		
+
+		System.out.println("1: to print to screen \n"
+				+ "2: to write to file \n"
+				+ "3: to do both");
+		int key = sc.nextInt();
+		if(key!=1 && key !=2 && key !=3)else throw new ImproperEx
+
+			if(key == 1) {
+				
+				for(String[] row : matrix) {
+					for(String elem : row ) {
+						System.out.format("%-25s", elem);
+					}
+					System.out.println();
+				}
+				
+				System.out.println();
+				sc.close();
+		}
+			
+			
+			else if(key == 2) {
+				File newFile = new File("matrix.txt");
+				
+				if(!newFile.exists()) {
+					newFile.createNewFile();
+				}
+				
+				PrintWriter pw = new PrintWriter(newFile);
+				
+				
+				for(String[] row : matrix) {
+					for(String elem : row ) {
+						pw.format("%-25s", elem);
+					}
+					pw.println();
+				}
+				
+				pw.println();
+				pw.close();
+				
+			}else if(key == 3) {
+				for(String[] row : matrix) {
+					for(String elem : row ) {
+						System.out.format("%-25s", elem);
+					}
+					System.out.println();
+				}
+				
+				System.out.println();
+				sc.close();
+				
+				File newFile = new File("matrix.txt");
+				
+				if(!newFile.exists()) {
+					newFile.createNewFile();
+				}
+				
+				PrintWriter pw = new PrintWriter(newFile);
+				
+				
+				for(String[] row : matrix) {
+					for(String elem : row ) {
+						pw.format("%-25s", elem);
+					}
+					pw.println();
+				}
+				
+				pw.println();
+				pw.close();
+			}
+			
+		}
+	
+	
+	
+		public class InvalidInputException extends Exception{
+			InvalidInputException(String s){
+				super(s);
+			}
+		}
+
+
+	}
+	
+
+

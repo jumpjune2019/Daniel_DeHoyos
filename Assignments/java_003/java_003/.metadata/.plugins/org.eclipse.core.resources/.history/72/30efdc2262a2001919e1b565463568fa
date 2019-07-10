@@ -1,0 +1,5 @@
+package customexceptionhandlers;
+
+public class OutOfBoundsException {
+
+}

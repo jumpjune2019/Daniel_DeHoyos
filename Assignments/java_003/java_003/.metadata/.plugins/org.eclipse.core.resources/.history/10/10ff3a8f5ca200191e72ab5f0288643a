@@ -1,0 +1,17 @@
+package customexceptionhandlers;
+
+
+
+public class ImproperInputException extends Exception {
+
+	int one;
+	
+	public ImproperInputException(int i) {
+		this.one = one; 
+	}
+	
+	public String toString() {
+		return "Improper input please enter valid option" + one;
+	}
+
+}

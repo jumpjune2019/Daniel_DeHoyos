@@ -1,0 +1,11 @@
+package matrixchoice;
+
+public class ImproperInputException extends Exception {
+	int one;
+		public ImproperInputException(int one) {
+				this.one = one; 
+		}
+		public String toString() {
+			return "Invalid option entered please try again = " + one;
+		}
+}
